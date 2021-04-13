@@ -1,0 +1,2 @@
+include ':app', ':lyw_project', ':lyw_home', ':lyw_discover', ':lyw_me', ':lyw_common', ':lyw_player', ':lyw_provider'
+rootProject.name='NewTauren'

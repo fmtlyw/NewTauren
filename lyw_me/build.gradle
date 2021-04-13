@@ -1,0 +1,4 @@
+apply from: "../common.module.config.gradle"
+android {
+    resourcePrefix "me_"
+}

@@ -1,0 +1,6 @@
+apply from: "../common.module.config.gradle"
+
+android {
+
+    resourcePrefix "discover_"
+}
