@@ -1,9 +1,12 @@
 package com.lyw.lyw_common.base.Activity
 
 import android.os.Bundle
+import androidx.annotation.ColorRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.gyf.immersionbar.ImmersionBar
+import com.lyw.lyw_common.R
 import com.lyw.lyw_common.base.viewmodel.BaseViewModel
 import com.lyw.lyw_common.base.viewmodel.ErrorState
 import com.lyw.lyw_common.base.viewmodel.LoadState
@@ -54,6 +57,8 @@ abstract class BaseVmActivity<VM : BaseViewModel> : AppCompatActivity() {
                 }
             }
         })
+
+        setStatusBarBackground(R.color.colorPrimaryDark)
     }
 
     private fun createViewModel(): VM {
@@ -90,4 +95,11 @@ abstract class BaseVmActivity<VM : BaseViewModel> : AppCompatActivity() {
     abstract fun initData()
 
     abstract fun createObserver()
+
+    /**
+     * 设置状态栏背景色
+     */
+    open fun setStatusBarBackground(@ColorRes statusBarColor: Int) {
+        ImmersionBar.with(this).autoStatusBarDarkModeEnable(true, 0.2f).statusBarColor(statusBarColor).fitsSystemWindows(true).init()
+    }
 }

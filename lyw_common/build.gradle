@@ -71,4 +71,5 @@ dependencies {
     api rootProject.ext.dependencies["SwipeRecyclerView"]
     api rootProject.ext.dependencies["jiaozivideoplayer"]
     api rootProject.ext.dependencies["arouter-api"]
+    api rootProject.ext.dependencies["immersionbar"]
 }
