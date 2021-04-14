@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="NewTauren.SplashActivity">
-        <item name="android:windowBackground">@drawable/bg_splash_background</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
+    <style name="NewTauren.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NewTauren.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

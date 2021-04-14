@@ -1,2 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lyw.lyw_home" />
+    package="com.lyw.lyw_home" >
+
+    <application>
+        <activity
+            android:name="com.lyw.lyw_home.splash.SplashActivity"
+            android:theme="@style/NewTauren.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".home.HomeActivity"/>
+    </application>
+</manifest>

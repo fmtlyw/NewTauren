@@ -1,6 +1,7 @@
 package com.lyw.lyw_common
 
 import android.app.Application
+import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStore
 import androidx.lifecycle.ViewModelStoreOwner
@@ -16,12 +17,17 @@ open class BaseApp : Application(), ViewModelStoreOwner {
 
     private var mFactory: ViewModelProvider.Factory? = null
 
+    companion object {
+        lateinit var context: Context
+    }
+
     override fun getViewModelStore(): ViewModelStore {
         return mAppViewModelStore
     }
 
     override fun onCreate() {
         super.onCreate()
+        context = this
         mAppViewModelStore = ViewModelStore()
     }
 

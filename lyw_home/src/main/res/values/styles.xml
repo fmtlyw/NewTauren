@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <style name="NewTauren.SplashActivity">
+        <item name="android:windowBackground">@drawable/bg_splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
