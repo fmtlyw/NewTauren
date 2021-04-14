@@ -3,7 +3,8 @@ package com.lyw.lyw_home.splash
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
-import com.lyw.lyw_common.base.Activity.BaseVmDbActivity
+import com.gyf.immersionbar.ImmersionBar
+import com.lyw.lyw_common.base.activity.BaseVmDbActivity
 import com.lyw.lyw_home.R
 import com.lyw.lyw_home.databinding.HomeActivitySplashBinding
 import com.lyw.lyw_home.home.HomeActivity
@@ -45,6 +46,10 @@ class SplashActivity : BaseVmDbActivity<SplashViewModel, HomeActivitySplashBindi
     override fun layoutId(): Int = R.layout.home_activity_splash
 
     override fun initView() {
+        //设置状态栏导航栏透明
+        // TODO("设置无效")
+//        setStatusBarBackground(R.color.colorPrimary)
+
         ivSlogan.startAnimation(alphaAnimation)
         ivSplashPicture.startAnimation(scaleAnimation)
         CoroutineScope(job).launch {

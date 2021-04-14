@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/lyw_player" />
             <option value="$PROJECT_DIR$/lyw_project" />
             <option value="$PROJECT_DIR$/lyw_provider" />
+            <option value="$PROJECT_DIR$/lyw_public" />
+            <option value="$PROJECT_DIR$/lyw_weather" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

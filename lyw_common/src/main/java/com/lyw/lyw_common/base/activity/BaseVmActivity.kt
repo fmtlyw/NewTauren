@@ -1,6 +1,7 @@
-package com.lyw.lyw_common.base.Activity
+package com.lyw.lyw_common.base.activity
 
 import android.os.Bundle
+import android.util.Log
 import androidx.annotation.ColorRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -13,6 +14,7 @@ import com.lyw.lyw_common.base.viewmodel.LoadState
 import com.lyw.lyw_common.base.viewmodel.SuccessState
 import com.lyw.lyw_common.ext.errorToast
 import com.lyw.lyw_common.ext.getVmClazz
+import com.youth.banner.util.LogUtils
 
 /**
  * 功能描述:
@@ -34,8 +36,8 @@ abstract class BaseVmActivity<VM : BaseViewModel> : AppCompatActivity() {
         } else {
             initDataBind()
         }
-        initView()
         init(savedInstanceState)
+        initView()
         createObserver()
         initData()
     }
@@ -57,7 +59,6 @@ abstract class BaseVmActivity<VM : BaseViewModel> : AppCompatActivity() {
                 }
             }
         })
-
         setStatusBarBackground(R.color.colorPrimaryDark)
     }
 

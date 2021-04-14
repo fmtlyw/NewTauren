@@ -1,4 +1,4 @@
-package com.lyw.lyw_common.base.Activity
+package com.lyw.lyw_common.base.activity
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil

@@ -60,4 +60,6 @@ dependencies {
     implementation project(path: ':lyw_project')
     implementation project(path: ':lyw_player')
     implementation project(path: ':lyw_provider')
+    implementation project(path: ':lyw_weather')
+    implementation project(path: ':lyw_public')
 }
