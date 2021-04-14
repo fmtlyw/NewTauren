@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">lyw_home</string>
+    <string name="home_app_name">lyw_home</string>
+    <string name="home_slogan_two_en">Daily appetizersfor your eyes. Bon eyepétit.</string>
+    <string name="home_slogan_two_cn">每日精选视频推介，让你大开眼界。</string>
+
+    <string name="home_menu_home">首页</string>
+    <string name="home_menu_project">项目</string>
+    <string name="home_menu_tree">发现</string>
+    <string name="home_menu_public">公众号</string>
+    <string name="home_menu_me">我的</string>
+
+
+    <string name="home_discover_follow">关注</string>
+    <string name="home_discover_category">分类</string>
+    <string name="home_discover_topic">专题</string>
+    <string name="home_discover_news">资讯</string>
+    <string name="home_discover_fresh_news">新鲜资讯</string>
+    <string name="home_discover_publish">发布：</string>
+    <string name="home_discover_collect">收藏</string>
+    <string-array name="home_discover_titles">
+        <item>@string/home_discover_follow</item>
+        <item>@string/home_discover_category</item>
+        <item>@string/home_discover_topic</item>
+        <item>@string/home_discover_news</item>
+    </string-array>
 </resources>
