@@ -1,4 +1,4 @@
-package com.lyw.lyw_project
+package com.lyw.lyw_project.viewmodel
 
 import com.lyw.lyw_common.base.viewmodel.BaseViewModel
 

@@ -32,5 +32,6 @@
     <color name="gray">#ededed</color>
     <color name="grayDark">#adadad</color>
     <color name="loading">#cdcdcd</color>
+    <color name="common_sub_title_color">#9a9a9a</color>
 
 </resources>
