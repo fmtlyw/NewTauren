@@ -1,5 +1,6 @@
 package com.lyw.lyw_common.base.fragment
 
+import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -30,7 +31,7 @@ abstract class BaseVmFragment<VM : BaseViewModel> : Fragment() {
 
     abstract fun layoutId(): Int
 
-    lateinit var mActivity: AppCompatActivity
+    lateinit var mActivity: Activity
 
     lateinit var mViewModel:VM
 

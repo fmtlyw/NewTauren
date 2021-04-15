@@ -21,8 +21,8 @@ class ProjectFragment : BaseVmFragment<ProjectViewModel>() {
 
     private val mFragmentList by lazy {
         mutableListOf<Fragment>().apply {
-            add(FollowFragment())
             add(CategoryFragment())
+            add(FollowFragment())
         }
     }
 
